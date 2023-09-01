@@ -227,6 +227,7 @@ line-height: 120%;
    height: 10px;
    border-radius: 1010px;
    background:  #D9D9D9;
+   cursor: pointer;
 }
 .active-dot{
    background: linear-gradient(149deg, #63D737 0%, #058048 100%);

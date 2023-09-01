@@ -13,7 +13,6 @@ const thisSlide = (index) => {
 }
 
 sliderDots.forEach((dot, index) => {
-   console.log(dot, index)
    dot.addEventListener('click', () => {
       position = 1920 * index;
       sliderLine.style.left = -position + 'px';

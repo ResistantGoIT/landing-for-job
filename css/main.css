@@ -1,0 +1,282 @@
+@import "./reset.css";
+@import "./media.css";
+@import "./fonts.css";
+
+body{
+   font-family: Inter;
+   color: #fff;
+}
+.container{
+   max-width: 1222px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+.hidden{
+   display: none;
+}
+/*------------ HEADER -------------*/
+.header{
+   position: relative;
+   z-index: 1;
+   padding: 17px 0;
+   background: linear-gradient(0deg, rgba(22, 26, 22, 0.00) 0%, #161A16 100%);
+}
+.header__content{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.enter{
+   display: flex;
+   align-items: center;
+   gap: 19px;
+   font-size: 16px;
+   font-weight: 600;
+}
+.log-in button{
+   text-decoration-line: underline;
+}
+.registration{
+   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+   border-radius: 100px;
+}
+.registration button{
+   position: relative;
+   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+   border-radius: 100px;
+   padding: 5px 25px 6px;
+}
+.btn-bg-img{
+   position: absolute;
+   z-index: -1;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   right: 0;
+}
+.registration button:hover >img{
+      top: 15px;
+      filter: blur(12.5px);
+}
+/*------------------ MAIN -------------------*/
+.main{
+   position: relative;
+   height: 660px;
+}
+.deposito{
+   position: relative;
+   height: 252px;
+   z-index: 1;
+}
+.deposito-minimo{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 215px;
+   border-radius: 0px 0px 25.8px 25.8px;
+   background: #FFF;
+   box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.60);
+   padding: 14px 22px 14.7px;
+   color: #293B2B;
+   text-align: center;
+   font-style: italic;
+   font-weight: 900;
+   line-height: normal;
+}
+.min-dep-text{
+   font-size: 20px;
+}
+.min-dep{
+   font-size: 28px;
+   text-transform: uppercase;
+}
+.deposito-hasta{
+   position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #FFF;
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.60);
+      font-style: italic;
+      font-weight: 900;
+      line-height: normal;
+}
+.bono,
+.hasta{
+   font-size: 43.557px;
+}
+.hasta{
+   margin-left: 75px;
+}
+.max-dep{
+   font-size: 56.624px;
+}
+/*------------------ SLIDER -------------------*/
+.slider{
+   position: relative;
+   top: -312px;
+   left: 0;
+   max-width: 1920px;
+   height: 720px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+.slider__line{
+   display: flex;
+   height: 100%;
+   position: relative;
+   left: 0;
+}
+.slider__img{
+   width: 1920px;
+   flex-shrink: 0;
+}
+.slider__gradient{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(0deg, rgba(41, 59, 43, 0.35) 0%, rgba(41, 59, 43, 0.35) 100%), radial-gradient(58.29% 46.00% at 50.00% 54.00%, rgba(41, 59, 43, 0.00) 50.26%, #293B2B 100%);
+}
+.slider__stadium-bg{
+   background: url(../img/football-stadium.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 100%;
+}
+.slider__benjamin-bg{
+   background: url(../img/benjamin.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 100%;
+}
+.slider__soccer-funs{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 110px;
+   bottom: 0;
+   background: url(../img/soccer-fans.png);
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.slider__girl{
+   position: absolute;
+      top: 0;
+      left: 0;
+      right: 200px;
+      bottom: -67px;
+      background: url(../img/girl.png);
+      background-repeat: no-repeat;
+      background-position: right;
+}
+.slider__regisration{
+   position: absolute;
+   top: 373px;
+   left: 370px;
+   display: flex;
+   flex-direction: column;
+   gap: 29px;
+   z-index: 2;
+   width: 430px;
+}
+.slider__regisration-text{
+text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.60);
+font-size: 32px;
+font-weight: 600;
+line-height: 120%;
+}
+.slider__regisration span{
+   text-transform: uppercase;
+}
+.slider__registration-btn-bg{
+   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+   border-radius: 100px;
+}
+.slider__registration-btn{
+   position: relative;
+   width: 430px;
+      background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+      border-radius: 100px;
+      padding: 13px 120px;
+      height: 80px;
+      color: #FFF;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 148.9%;
+}
+.slider__registration-btn-bg button:hover>img {
+   top: 15px;
+   filter: blur(12.5px);
+}
+.slider__dots-wrapper{
+   position: absolute;
+   left: 925px;
+   bottom: 25px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.dot{
+   width: 10px;
+   height: 10px;
+   border-radius: 1010px;
+   background:  #D9D9D9;
+}
+.active-dot{
+   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+}
+/*------------------ FOOTER -------------------*/
+.footer{
+   position: relative;
+   background: #293B2B;
+   padding: 93px 0 56px;
+   margin: 0 auto;
+}
+.form__subscribe-form{
+   display: flex;
+   align-items: center;
+   gap: 98.59px;
+   margin-bottom: 93px;
+}
+.form__wrapper{
+   flex-grow: 1;
+}
+.form__label{
+   display: flex;
+   align-items: center;
+   gap: 42px;
+   height: 44px;
+   padding-left: 2px;
+   border-radius: 99.153px;
+   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+}
+.form__input{
+   flex-grow: 1;
+   color: #161A16;
+   padding: 0 24px;
+   height: 40px;
+   border-radius: 84.793px;
+   background: #FFF;
+}
+.form__input::placeholder{
+   color: #D9D9D9;
+   font-size: 17.186px;
+   font-weight: 600;
+   line-height: 147.828%;
+}
+.form__btn{
+   padding-right: 47px;
+}
+.payment__row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 74px;
+   align-items: center;
+   justify-content: space-between;
+}

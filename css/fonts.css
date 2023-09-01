@@ -1,0 +1,14 @@
+@font-face {
+   font-family: Inter, 'Courier New', Courier, monospace;
+   src: url(../fonts/Inter-SemiBold.otf);
+   src: local(inter), url(../fonts/Inter-V.ttf);
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: Inter, 'Courier New', Courier, monospace;
+   src: url(../fonts/Inter-BlackItalic.otf);
+   src: local(inter), url(../fonts/Inter-V.ttf);
+   font-weight: 900;
+   font-style: italic;
+}

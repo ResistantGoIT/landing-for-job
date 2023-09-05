@@ -10,14 +10,16 @@ body{
    max-width: 1222px;
    padding: 0 20px;
    margin: 0 auto;
+   height: 100%;
 }
 .hidden{
    display: none;
 }
 /*------------ HEADER -------------*/
 .header{
-   position: relative;
-   z-index: 1;
+   position: sticky;
+   top: 0;
+   z-index: 100;
    padding: 17px 0;
    background: linear-gradient(0deg, rgba(22, 26, 22, 0.00) 0%, #161A16 100%);
 }
@@ -51,7 +53,7 @@ body{
    position: absolute;
    z-index: -1;
    left: 0;
-   right: 0;
+   top: 2px;
    bottom: 0;
    right: 0;
 }
@@ -114,7 +116,7 @@ body{
 /*------------------ SLIDER -------------------*/
 .slider{
    position: relative;
-   top: -312px;
+   top: -720px;
    left: 0;
    max-width: 1920px;
    height: 720px;
@@ -159,26 +161,25 @@ body{
    position: absolute;
    top: 0;
    left: 0;
-   right: 110px;
+   right: -17%;
    bottom: 0;
    background: url(../img/soccer-fans.png);
    background-repeat: no-repeat;
-   background-position: right;
+   background-position: center;
 }
 .slider__girl{
    position: absolute;
-      top: 0;
-      left: 0;
-      right: 200px;
-      bottom: -67px;
-      background: url(../img/girl.png);
-      background-repeat: no-repeat;
-      background-position: right;
+   top: 0;
+   left: 0;
+   right: -17%;
+   bottom: -55px;
+   background: url(../img/girl.png);
+   background-repeat: no-repeat;
+   background-position: center;
 }
 .slider__regisration{
    position: absolute;
    top: 373px;
-   left: 370px;
    display: flex;
    flex-direction: column;
    gap: 29px;
@@ -216,8 +217,14 @@ line-height: 120%;
 }
 .slider__dots-wrapper{
    position: absolute;
-   left: 925px;
    bottom: 25px;
+   z-index: 1;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.slider__dots{
    display: flex;
    align-items: center;
    gap: 10px;
@@ -238,6 +245,7 @@ line-height: 120%;
    background: #293B2B;
    padding: 93px 0 56px;
    margin: 0 auto;
+   max-width: 1920px;
 }
 .form__subscribe-form{
    display: flex;

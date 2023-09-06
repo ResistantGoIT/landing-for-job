@@ -5,6 +5,7 @@
 body{
    font-family: Inter;
    color: #fff;
+   background-color: #293B2B;
 }
 .container{
    max-width: 1222px;
@@ -21,7 +22,7 @@ body{
    top: 0;
    z-index: 100;
    padding: 17px 0;
-   background: linear-gradient(0deg, rgba(22, 26, 22, 0.00) 0%, #161A16 100%);
+   background: linear-gradient(0deg, rgba(22, 26, 22, 0.00) -37.5%, #161A16 68%);
 }
 .header__content{
    position: relative;
@@ -288,4 +289,121 @@ line-height: 120%;
    gap: 74px;
    align-items: center;
    justify-content: space-between;
+}
+.payment__row img{
+   opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 650px){
+   .container{
+      max-width: 360px;
+   }
+   /* HEADER */
+   .log-in{
+      display: none;
+   }
+   .header{
+      padding: 9px 0;
+      height: 40px;
+   }
+   .logo{
+      width: 70px;
+   }
+   .enter{
+      font-size: 11px;
+   }
+   .registration button{
+      padding: 4px 16px 4.4px;
+   }
+
+   /* MAIN */
+   .main{
+      height: 800px;
+      background-color: #293B2B;
+   }
+   .deposito{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 24px;
+      z-index: 1;
+      width: 221.49px;
+      height: 143.32px;
+   }
+   .deposito-minimo,
+   .deposito-hasta{
+      position: static;
+   }
+   .deposito-minimo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 211px;
+      height: 26px;
+      right: auto;
+      border-radius: 0px 0px 13.32px 13.32px;
+   }
+   .deposito-hasta{
+      width: 221px;
+      text-align: center;
+   }
+   .min-dep-text{
+      display: inline-block;
+      font-size: 10.326px;
+   }
+   .min-dep{
+      font-size: 12.33px;
+   }
+   .bono,
+   .hasta {
+      font-size: 24.096px;
+   }
+   .max-dep{
+      font-size: 31.324px
+   }
+   .slider__regisration{
+      width: 263px;
+      top: 90px;
+      position: relative;
+      margin: 0 auto;
+   }
+   .slider__regisration-text{
+      font-size: 15.743px;
+      text-align: center;
+   }
+   .slider__registration-btn{
+      width: 100%;
+      height: 49px;
+      padding: 8px 73px;
+      text-align: center;
+      font-size: 22.019px;
+   }
+   .slider__soccer-funs,
+   .slider__girl{
+      top: 220px;
+      right: 0;
+      background-size: cover;
+   }
+   .slider__girl{
+      right: -90px;
+   }
+   .logo__wrapper{
+      display: none;
+   }
+   .form__subscribe-form{
+      justify-content: center;
+   }
+   .form__label{
+      font-size: 12.109px;
+      gap: 22px;
+   }
+   .payment__row{
+      gap: 16px;
+      justify-content: space-around;
+   }
 }

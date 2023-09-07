@@ -20,7 +20,7 @@ function showSlide() {
 sliderDots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
          thisSlide(index);
-         dotIndex = index
+         dotIndex = index;
          rollSlide(dotIndex);
          
       })

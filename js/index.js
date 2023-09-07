@@ -5,7 +5,7 @@ const slider = document.querySelector('.slider')
 
 
 let width = 0,
-   index;
+   dotIndex;
 
     
 function showSlide() {
@@ -15,13 +15,14 @@ function showSlide() {
       slide.style.width = width + 'px';
       slide.style.height = 'auto'
    })
-   rollSlide(index)
+   rollSlide(dotIndex)
 }
 sliderDots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
-         // position = sliderWidth * index + 'px';
          thisSlide(index);
-         rollSlide(index);
+         dotIndex = index
+         rollSlide(dotIndex);
+         
       })
    })
 window.addEventListener('resize', showSlide);
@@ -34,8 +35,8 @@ const thisSlide = (index) => {
    sliderDots[index].classList.add('active-dot')
 }
 
-function rollSlide(index) {
-   sliderLine.style.left = -width * index + 'px'
+function rollSlide(dotIndex) {
+   sliderLine.style.left = -(width * dotIndex) + 'px'
 }
 
 

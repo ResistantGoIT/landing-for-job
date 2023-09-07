@@ -197,24 +197,53 @@ line-height: 120%;
    text-transform: uppercase;
 }
 .slider__registration-btn-bg{
-   background: linear-gradient(149deg, #63D737 0%, #058048 100%);
+   background: #c2c5c9;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
    border-radius: 100px;
+   padding: 10px;
+   transition: transform 0.7s ease;
 }
 .slider__registration-btn{
    position: relative;
-   width: 430px;
-      background: linear-gradient(149deg, #63D737 0%, #058048 100%);
-      border-radius: 100px;
-      padding: 13px 120px;
-      height: 80px;
-      color: #FFF;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 148.9%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   background: #eba534;
+   border-radius: 100px;
+   height: 80px;
+   color: #058048;
+   text-transform: uppercase;
+   font-size: 45px;
+   font-weight: 600;
+   line-height: 148.9%;
+   overflow: hidden;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.6);
 }
-.slider__registration-btn-bg button:hover>img {
-   top: 15px;
-   filter: blur(12.5px);
+.slider__registration-btn::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 30px;
+   height: 100%;
+   z-index: 4;
+   background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+   filter: blur(8px);
+   transform: translateX(-60px) skew(-45deg);
+   animation: move 4s 1s infinite;
+}
+@keyframes move {
+   0% {
+      left: 0%;
+   }
+   100% {
+      left: 150%;
+   }
+}
+.slider__registration-btn-bg:hover {
+   transform: scale(1.05);
 }
 .slider__dots-wrapper{
    position: absolute;
@@ -382,7 +411,6 @@ line-height: 120%;
    .slider__registration-btn{
       width: 100%;
       height: 49px;
-      padding: 8px 73px;
       text-align: center;
       font-size: 22.019px;
    }

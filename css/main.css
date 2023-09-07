@@ -408,6 +408,9 @@ line-height: 120%;
       font-size: 15.743px;
       text-align: center;
    }
+   .slider__registration-btn-bg{
+      padding: 7px;
+   }
    .slider__registration-btn{
       width: 100%;
       height: 49px;

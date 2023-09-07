@@ -232,7 +232,7 @@ line-height: 120%;
    background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
    filter: blur(8px);
    transform: translateX(-60px) skew(-45deg);
-   animation: move 4s 1s infinite;
+   animation: move 2s 1s infinite;
 }
 @keyframes move {
    0% {
